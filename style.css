@@ -1,0 +1,179 @@
+body {
+  font-family: Montserrat;
+  margin: 0;
+  background: linear-gradient(to right, rgb(179, 79, 79), rgb(238, 170, 106));
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+input[type="text"] {
+  width: 200px;
+}
+
+button {
+  margin-left: 10px;
+}
+
+.card {
+  display: inline-block;
+  width: calc(15% - 25px);
+  margin: 15px;
+  text-align: center;
+  font-size: 14px;
+  vertical-align: top;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-expanded {
+  width: 80%;
+  margin: 20px auto;
+  display: block;
+  cursor: default;
+  text-align: left;
+}
+
+.card-expanded img {
+  float: left;
+  margin-right: 20px;
+}
+
+.card-expanded .card-info {
+  overflow: hidden;
+  padding-right: 20px;
+}
+
+.card-expanded .card-info h2 {
+  margin-top: 0;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+#cardInfo {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.view-all-btn {
+  background-color: #fd8946;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.view-all-btn:hover {
+  background-color: #f86d1c;
+}
+
+.deck-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.deck {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  margin: 20px;
+  padding: 30px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.deck-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #F9C600;
+  color: #333;
+  font-family: Montserrat;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.deck-button:hover {
+  background-color: #333;
+  color: #F9C600;
+}
+
+.deck:hover {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.deck h2 {
+  margin: 0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 1000px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
